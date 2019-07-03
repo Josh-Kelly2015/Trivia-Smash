@@ -19,38 +19,53 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    
+
 </head>
 
-<body class="bg-secondary">
+<body>
 
-    <div class="container bg-white">
-
-        <div class="row text-primary justify-content-center">
-            Trivia Game!
+    <div class="container">
+        <div class="row justify-content-center">
+            <h2>Trivia Game!</h2>
         </div>
+        <div class="row justify-content-center" id = "timerDiv">
+            <h2 id = "timer">Time Remaining: </h2>
+        </div>
+        <div id = "winLoss"></div>
+        <button type="button" class="btn btn-primary" id = "start-button">Start!!</button>
 
-       
-            <div class="row text-primary justify-content-center" id = "timeDiv">
-                Time Remaining:
+        <form target="_self">
+            <div class="container quiz">
+                <h4>It is Wednesday my dudes...</h4>
+                <input type="radio" name="answerOne" value="aaahhhhhh"> aaahhhhhh
+                <input type="radio" name="answerOne" value="bored"> bored
+                <input type="radio" name="answerOne" value="hard"> hard
+                <input type="radio" name="answerOne" value="chillin"> chillin
+
+                <h4>hurricane katrina?? more like... </h4>
+                <input type="radio" name="answerTwo" value="hurricane tortilla!"> hurricane tortilla!
+                <input type="radio" name="answerTwo" value="still bored"> still bored
+                <input type="radio" name="answerTwo" value="also hungry"> also hungry
+                <input type="radio" name="answerTwo" value="kinda chillin"> kinda chillin
+
+                <h4>How would Keanu Reeves describe you??</h4>
+                <input type="radio" name="answerThree" value="You're breathtaking!!">"You're breathtaking!!"
+                <input type="radio" name="answerThree" value="ugly azzz">ugly azzz
+                <input type="radio" name="answerThree" value="go drink some dasani.">go drink some dasani.
+                <input type="radio" name="answerThree" value="i only drink Voss water, not sorry.">i only drink Voss water, not sorry.
+
+                <h4>Why you always</h4>
+                <input type="radio" name="answerFour" value="lying"> lying
+                <input type="radio" name="answerFour" value="playing"> playing
+                <input type="radio" name="answerFour" value="crying"> crying
+                <input type="radio" name="answerFour" value="dying"> dying
             </div>
 
-            <div class="row text-primary justify-content-center" id = "questionDiv">
-                QUestioon goes here kinda make this long so it
-            </div>
+            
+                    <button type="submit" id = "submit">Submit!</button>
+            
 
-            <div class="container w-25 bg-white">
-                    <button type="button" class="btn btn-outline-secondary text-primary w-auto" id = "buttonOne">Answer 1</button>
-                    <button type="button" class="btn btn-outline-secondary text-primary w-auto" id = "buttonTwo">Answer 2</button>
-                    <button type="button" class="btn btn-outline-success text-primary w-auto" id = "buttonThree">Answer 3</button>
-                    <button type="button" class="btn btn-outline-danger text-primary w-auto" id = "buttonFour">Answer 4</button>
-                </button>
-                </div>
-            </div>
-        
-
-
-
+        </form>
     </div>
 
 
@@ -60,8 +75,7 @@
 
 
 
-
-    <script src="assets/javascript/game2.js" type = "text/javascript"></script>
+    <script src="assets/javascript/game2.js" type="text/javascript"></script>
 </body>
 
 </html>
